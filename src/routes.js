@@ -1,5 +1,10 @@
+import Header from './components/Header.vue'
 import LoginUno from './components/LoginUno.vue'
 
+//pages
+import BenGafas from './pages/BenGafas.vue'
+import CertificadoLaboral from './pages/CertificadoLaboral.vue'
+//fin pages
 import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
 import PedidoGet from './pages/ImprimirPedido.vue'
@@ -9,6 +14,11 @@ import AppVue from './App.vue'
 
 export const routes = [
     {path:'/LoginUno',component:LoginUno},
+    {path:'/Header',component:Header},
+    //pages
+    {path:'/BenGafas',component:BenGafas},
+    {path:'/CertificadoLaboral',component:CertificadoLaboral},
+    //fin pages
     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},
     {path:'/PedidoGet', component:PedidoGet},
