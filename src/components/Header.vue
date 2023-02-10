@@ -8,14 +8,15 @@
       <div class='enc'>
         <h1 class='pie'><strong>Reincar Preguntas Frecuentes</strong></h1>
         
-        
+        <!-- recursos humanos -->
         <div class="caja-theme">
             <h2>Recursos Humanos</h2>
             <li class="nav-item"><router-link to="/BenGafas" class="" active-class="active">¿Como acceder al beneficio de gafas?</router-link></li>
             <li class="nav-item"><router-link to="/CertificadoLaboral" class="" active-class="active">¿Como solicitar un certificado laboral?</router-link></li>
-            <li class="nav-item"><router-link to="/BenGafas" class="" active-class="active">¿Como solicitar un permiso o informar una calamidad?</router-link></li>
+            <li class="nav-item"><router-link to="/PermisoCalamidad" class="" active-class="active">¿Como solicitar un permiso o informar una calamidad?</router-link></li>
         </div>
 
+        <!-- contabilidad -->
         <div class="caja-theme">      
       <h2>Contabilidad</h2>
       <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
@@ -23,15 +24,16 @@
       <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li>
       </div>
 
+       <!--  sistemas -->
       <div class="caja-theme">      
       <h2>Sistemas</h2>
-      <li class="nav-item"><routerLink to=""><a>¿Problemas con la red?</a></routerLink></li>
-      <li class="nav-item"><routerLink to=""><a>¿Problemas al encender el equipo?</a></routerLink></li>
-      <li class="nav-item"><routerLink to=""><a>¿Páginas WEB?</a></routerLink></li>
-      <li class="nav-item"><routerLink to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></routerLink></li>
-      <li class="nav-item"><routerLink to=""><a>¿Ingresar a la compartida?</a></routerLink></li>    
-      <li class="nav-item"><routerLink to=""><a>¿Pidgin o Spark?</a></routerLink></li>
-      <li class="nav-item"><routerLink to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></routerLink></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas con la red?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas al encender el equipo?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Páginas WEB?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
+      <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li>
     </div>
 
 </div>
