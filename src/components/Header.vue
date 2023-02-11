@@ -27,9 +27,9 @@
        <!--  sistemas -->
       <div class="caja-theme">      
       <h2>Sistemas</h2>
-      <li class="nav-item"><router-link to=""><a>¿Problemas con la red?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Problemas al encender el equipo?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Páginas WEB?</a></router-link></li>
+      <li class="nav-item"><router-link to="/ConexionRed" active-class="active"><a>¿Problemas con la red?</a></router-link></li>
+      <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
+      <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Páginas WEB?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
@@ -1456,6 +1456,7 @@ body {
 }
 div.caja-theme{
   padding:auto;
+  padding-block: 10px;
   display:inline-block;
   margin-top:auto;
   vertical-align:top;

@@ -15,9 +15,6 @@
         </div>
     </div>
 </template>
-
-<script>
-</script>
 <style scoped>
 h1{
     font-family: 'Times New Roman', Times, serif;

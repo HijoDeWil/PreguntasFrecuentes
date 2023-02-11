@@ -9,8 +9,6 @@
             que información requieren que se les certifique y por ese mismo medio se enviará el documento; si lo requiere en fisico
             debe señalarlo en la solicitud y reclamarlo en capital humano. Las certificaciones solo se expedirán los días jueves por la
             tarde.</a></li>
-            
-
         </div>
     </div>
 </template>

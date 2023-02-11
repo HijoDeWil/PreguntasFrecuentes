@@ -5,6 +5,9 @@ import LoginUno from './components/LoginUno.vue'
 import BenGafas from './pages/BenGafas.vue'
 import CertificadoLaboral from './pages/CertificadoLaboral.vue'
 import PermisoCalamidad from './pages/PermisoCalamidad.vue'
+import ConexionRed from './pages/ConexionRed.vue'
+import ProblemaEncendido from './pages/ProblemaEncendido.vue'
+import CargarPagina from './pages/CargarPagina.vue'
 //fin pages
 /* import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
@@ -20,6 +23,9 @@ export const routes = [
     {path:'/BenGafas',component:BenGafas},
     {path:'/CertificadoLaboral',component:CertificadoLaboral},
     {path:'/PermisoCalamidad',component:PermisoCalamidad},
+    {path:'/ConexionRed',component:ConexionRed},
+    {path:'/ProblemaEncendido',component:ProblemaEncendido},
+    {path:'/CargarPagina',component:CargarPagina},
     //fin pages
 /*     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},

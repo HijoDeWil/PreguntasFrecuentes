@@ -41,6 +41,11 @@
               <div class="row"></div>
               </div>
           </div>
+          <footer>
+            <div>
+              
+            </div>
+          </footer>
 <router-view />
 </template>
 
