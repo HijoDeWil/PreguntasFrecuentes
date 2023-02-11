@@ -6,8 +6,6 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Reincar Preguntas Frecuentes</title>
   </head>
-
-    
         <header class='hea'>
           <div class="nav-bar">
   <nav class="navbar navbar-light nav-pills">
@@ -24,7 +22,7 @@
       </nav>
 </div> 
       </header>
-      
+   
   <header id="header" class="header">
         <div class="container">
             <div class="row">
@@ -80,9 +78,71 @@ export default {
   width: 1000px;
   margin:auto;
   padding:auto;
+  background-color: #0d4dd8;
 }
 a.nav-link{
   color:#ffffff;
   text-align:left;
+}
+header.hea {
+    background: #032d86;
+    width: 100%;
+    z-index: index 100%;
+    position:sticky;
+    height: 70px;
+    margin-right: 5px;
+  
+  } 
+  h1{
+  font-family: 'Times New Roman', Times, serif;
+  color:#ffffff;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #20acb1;
+    padding:15px;
+}
+.navbar{
+  color:#4c72c5
+}
+a.nav-link{
+  color:#000000;
+  text-align:left;
+  padding:15px;
+  background-color: #26c0c0;
+}
+.nav li:hover .submenu{
+  display:inline-block;
+}
+.nav-link:hover {
+  background-color: #5f8bce;
+  color: white;
+  padding:15px;
+}
+
+.navbar .navbar-light .nav-pills ul{
+  list-style: none;
+}
+.nav > li{
+position:relative;
+display:inline-block
+}
+.nav > li > {
+  display: block;
+  padding:auto;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: none;
+
+}
+.nav li a:hover{
+  transition:all .3s;
+}
+header.hea[data-v-3c9d234f] {
+  background: linear-gradient();
+    width: 100%;
+    z-index: index 80%;
+    position: sticky;
+    height: 45px;
+    margin-right: 5px;
 }
 </style>
