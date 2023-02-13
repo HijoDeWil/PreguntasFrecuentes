@@ -19,9 +19,9 @@
         <!-- contabilidad -->
         <div class="caja-theme">      
       <h2>Contabilidad</h2>
-      <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
+      <!-- <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Como solicitar un certificado laboral?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li> -->
       </div>
 
        <!--  sistemas -->
@@ -36,6 +36,16 @@
       <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li>
     </div>
 
+    <div class="caja-theme">      
+      <h2>Administrativo</h2>
+      <!-- <li class="nav-item"><router-link to="/ConexionRed" active-class="active"><a>¿Problemas con la red?</a></router-link></li>
+      <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
+      <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Páginas WEB?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
+      <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
+    </div>
 </div>
       </body>
 
@@ -127,7 +137,7 @@ export default {
   h1.pie{
   font-family: 'Times New Roman', Times, serif,cursive;
   font-size: 50px;
-  color:rgb(48, 36, 228);
+  color:rgb(2, 38, 139);
   text-align: center;
   }
 
