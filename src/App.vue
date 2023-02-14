@@ -17,6 +17,26 @@
             >Inicio</router-link
           >
         </li>
+        <li class="nav-item" v-if="check">
+          <router-link to="/LoginUno" class="nav-link" active-class="active"
+            >Inicio de Sesion</router-link
+          >
+        </li>
+        <li class="nav-item" v-if="verificar">
+          <router-link to="/FormData" class="nav-link" active-class="active"
+            >Registrar Nuevo</router-link
+          >
+        </li>
+        <li class="nav-item" v-if="verificar">
+          <router-link to="/PrintData" class="nav-link" active-class="active"
+            >Usuarios</router-link
+          >
+        </li>
+        <li class="nav-item" v-if="verificar">
+          <router-link to="/Pedidos" class="nav-link" active-class="active"
+            >Formulario de Preguntas</router-link
+          >
+        </li>
       </ul>
       <h1>Bienvenido!</h1>
       </nav>
@@ -58,11 +78,15 @@ export default {
     return{
       error:false,
       mostrar:this.$store.state.mostrar,
+      login:this.$store.state.login
     }
   },
   computed:{
     verificar(){
     return  this.$store.state.mostrar
+  },
+  check(){
+    return this.$store.state.login
   }
 }}
 </script>
@@ -99,17 +123,19 @@ header.hea {
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #20acb1;
-    padding:15px;
+    background-color: #075f88;
+    padding:12px;
 }
 .navbar{
   color:#4c72c5
 }
 a.nav-link{
-  color:#000000;
+  color:#ffffff;
   text-align:left;
-  padding:15px;
+  padding:12px;
   background-color: #26c0c0;
+  border-radius: 15px;
+  margin-left:16px;
 }
 .nav li:hover .submenu{
   display:inline-block;
@@ -117,7 +143,8 @@ a.nav-link{
 .nav-link:hover {
   background-color: #5f8bce;
   color: white;
-  padding:15px;
+  padding:12px;
+  transition: 0,5ms;
 }
 
 .navbar .navbar-light .nav-pills ul{
@@ -145,4 +172,5 @@ header.hea[data-v-3c9d234f] {
     height: 45px;
     margin-right: 5px;
 }
+
 </style>

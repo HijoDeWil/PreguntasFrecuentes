@@ -7,14 +7,15 @@
       <body>
       <div class='enc'>
         <h1 class='pie'><strong>Reincar Preguntas Frecuentes</strong></h1>
-        
         <!-- recursos humanos -->
         <div class="caja-theme">
             <h2>Recursos Humanos</h2>
             <li class="nav-item"><router-link to="/BenGafas" class="" active-class="active">¿Como acceder al beneficio de gafas?</router-link></li>
             <li class="nav-item"><router-link to="/CertificadoLaboral" class="" active-class="active">¿Como solicitar un certificado laboral?</router-link></li>
             <li class="nav-item"><router-link to="/PermisoCalamidad" class="" active-class="active">¿Como solicitar un permiso o informar una calamidad?</router-link></li>
-        </div>
+            <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
+              <router-link :to="`/InfoPedido/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li>     
+          </div>
 
         <!-- contabilidad -->
         <div class="caja-theme">      
@@ -95,13 +96,38 @@
     
 </template>
 <script>
-
+/*eslint-disable*/
+import {ref} from 'vue'
+import axios from 'axios'
 // import LoginUno from "./components/LoginUno";
 /*import{ref} from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router';*/
 export default {
- 
+  setup(){
+    const pedidos = ref([])
+  axios.get('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json')
+  .then(res =>{
+    console.log(res)
+    for(const id in res.data){
+      pedidos.value.push({
+        id: id,
+          codigo:res.data[id].codigo,
+          nameProducto:res.data[id].nameProducto,
+          TipoMadera:res.data[id].TipoMadera,
+          MedioPago:res.data[id].MedioPago,
+          TipoTela:res.data[id].TipoTela,
+          nombre:res.data[id].nombre,
+          tipoDoc:res.data[id].tipoDoc,
+          documento:res.data[id].documento,
+          direccion:res.data[id].direccion,
+          fecha:res.data[id].fecha,
+      })
+    }
+  })
+  .catch(error=>console.log(error))
+  return {pedidos};
+},
   data(){
     return{
       mostrar:this.$store.state.mostrar,

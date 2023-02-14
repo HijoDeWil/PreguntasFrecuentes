@@ -33,7 +33,7 @@
 <style scoped>
 h1{
     font-family: 'Times New Roman', Times, serif;
-    color:#fff;
+    color:#000000;
     text-align: center;
     font-size: 40px;
 }
