@@ -24,7 +24,7 @@
             type="text" 
             class="form-control" 
             cols="60" 
-            rows="6">Escriba el proceso para solucionar su pregunta</textarea>
+            rows="10">Escriba el proceso para solucionar su pregunta</textarea>
           </div>
 
           <h6>Seleccione el Área al que pertenece </h6>
@@ -45,6 +45,11 @@
             <label>Fecha Del Pedido</label>
                   <input type="DATE" v-model="fecha">
           </div>
+          <div>
+            <label for="formGroupExampleInput">Agregar Imagen Alusiva</label>
+            <input class="form-control" type="file" name="image">
+          </div>
+
           <button class="btn btn-primary" @click="addPedido" id="btn-alert" onclick="alert('Tu Pregunta Fue Agregada Correctamente')">
             Añadir
           </button>
@@ -64,7 +69,7 @@
       // const router = useRouter()
       const area = ref("")
       const nameProducto = ref("")
-      const TipoMadera = ref("")
+      const image = ref("")
       const MedioPago = ref("")
       const TipoTela = ref("")
       const nombre = ref("")
@@ -80,7 +85,7 @@
          const pedido = {
             area:area.value,
             nameProducto:nameProducto.value,
-            TipoMadera:TipoMadera.value,
+            image:image.value,
             MedioPago:MedioPago.value,
             TipoTela:TipoTela.value,
             nombre:nombre.value,
@@ -96,7 +101,7 @@
           axios.post('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json',pedido).then(res=>console.log(res)).catch(error => console.log(error))
         }
       }
-      return{area, nameProducto, nombre, tipoDoc, documento, direccion ,fecha, addPedido}
+      return{area, nameProducto, nombre, tipoDoc, documento, direccion ,fecha, image , addPedido}
     }
     /*data() {
        return {
@@ -125,26 +130,36 @@
       font-family: arial black;
       text-align: center;
       cursor:default;
-      color:rgb(150, 128, 110);
+      color:rgb(255, 255, 255);
   }
   h2{
       font-family:Arial, Helvetica, sans-serif;
       font-size:36px;
-      color: black;
+      color: rgb(255, 255, 255);
       text-align: center;
   }
-  h6{
-      color:rgb(102, 102, 102);
+  h6 {
+      color:rgb(255, 255, 255);
       text-align: center;
       margin-left: 100px;
       margin-right: 100px;
   }
+  h5{
+    color:white;
+  }
   legend{
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
+      color:white;
+  }
+  label{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color:white;
   }
   p{
       text-align: center;
+      color:white;
   }
   input{
       border-radius: 10px;
@@ -152,17 +167,30 @@
       font-family: "Poppins", sans-serif;
       margin:10px;
       padding: 10px;
+      color:rgb(136, 129, 129);
   }
   
   .card {
-      width: auto;
-      height: 100%;
+      height: auto;
       margin:auto;
-      background-color: rgba(218, 182, 136, 0.877);
+      background-color: rgb(12, 43, 100);
       border-style: none;
-      border-radius: 30px;
+      border-radius:0;
       border-style: solid;
       border-width: 2px;
+      border-color:black;
       justify-content: center;
+  }
+  .btn-primary{
+    background-color: rgb(0, 238, 198);
+    color:black;
+    font-size:20px;
+  }
+  div.card-body{
+    width:auto;
+    margin-top: 20px;
+  }
+  div{
+    margin-top:30px
   }
   </style>

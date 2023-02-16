@@ -17,21 +17,17 @@
             >Inicio</router-link
           >
         </li>
-        <li class="nav-item" v-if="check">
-          <router-link to="/LoginUno" class="nav-link" active-class="active"
-            >Inicio de Sesion</router-link
-          >
-        </li>
+      
         <li class="nav-item" v-if="verificar">
           <router-link to="/FormData" class="nav-link" active-class="active"
             >Registrar Nuevo</router-link
           >
         </li>
-        <li class="nav-item" v-if="verificar">
+        <!-- <li class="nav-item" v-if="verificar">
           <router-link to="/PrintData" class="nav-link" active-class="active"
             >Usuarios</router-link
           >
-        </li>
+        </li> -->
         <li class="nav-item" v-if="verificar">
           <router-link to="/Pedidos" class="nav-link" active-class="active"
             >Formulario de Preguntas</router-link
@@ -172,5 +168,4 @@ header.hea[data-v-3c9d234f] {
     height: 45px;
     margin-right: 5px;
 }
-
 </style>

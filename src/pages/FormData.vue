@@ -1,7 +1,5 @@
 <template>
     <div>
-      <h3>Registrar Usuarios</h3>
-  
       <div class="card" style="width: 35rem">
         <div class="card-body">
           <h5 class="card-title">¡Registrar Nuevo Usuario!</h5>
@@ -24,7 +22,7 @@
               placeholder="Contraseña"
             />
           </div>
-
+          <label>Seleccione el área al que pertenece</label>
           <select
             v-model="area"
             type="text"
@@ -46,7 +44,7 @@
               placeholder="cer-ve-za ?"
             /> 
           </div>-->
-          <button class="btn btn-primary" @click="addPersona">
+          <button class="btn btn-primary" @click="addPersona" onclick="alert('¡EL USUARIO FUE AGREGADO EXITOSAMENTE!')">
             A&ntilde;adir
           </button>
         </div>
@@ -139,16 +137,27 @@
     padding: 10px;
     align-content: center;
     width: 300px;
-    background-color: rgba(247, 180, 45, 0.269);
+    background-color: rgb(12, 43, 100);
+    border-radius:0;
   }
   h3{
     text-align: center;
+    color:white;
     
+  }
+  label{
+    text-align: center;
+    color:#fff;
+  }
+  div{
+    margin-top:70px;
+    margin-left: 30px;
+
   }
   .btn-primary {
       color: #fff;
-      background-color: #7b6134;
-      border-color: #523918;
+      background-color: #1f9eaf;
+      border-color: #0a9975;
       margin-top: 10px;
   }
   .form-control {
@@ -163,14 +172,14 @@
       background-color: #fff;
       background-clip: padding-box;
       border: 1px solid #ced4da;
-      border-radius: 20px;
+      border-radius:0;
       transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       font-family: "Poppins", sans-serif;
   }
   h5{
     font-family: arial black;
     font-size: 40px;
-    color:rgb(150, 128, 110);
+    color:rgb(255, 255, 255);
     text-align: center;
   }
   </style>

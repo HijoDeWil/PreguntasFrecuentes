@@ -92,8 +92,14 @@
           >
         </li> -->
         <!-- <button v-if="verificar"><a href="/log">Cerrar Sesion</a></button>
-        --> 
-    
+        --> <footer>
+          <li class="nav-item" v-if="check">
+          <router-link to="/LoginUno" class="nav-link" active-class="active"
+            ><a>Inicio de Sesion</a></router-link
+          >
+        </li>
+        </footer>
+        
 </template>
 <script>
 /*eslint-disable*/
@@ -236,5 +242,12 @@ li.nav-item{
 }
 a{
   line-height: 0px;
+}
+li .nav-link{
+  text-align: left;
+ 
+}
+footer{
+  padding:10px;
 }
 </style>

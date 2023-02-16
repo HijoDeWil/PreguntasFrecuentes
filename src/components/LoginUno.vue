@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <form v-on:submit.prevent="login">
-      <h1>¡Bienvenido Administrador!</h1>
+      <h1>¡Inicio de Sesión!</h1>
 
       <h6>Nombre de Usuario</h6>
   <input
@@ -104,14 +104,14 @@ this.usuarios.value=[]
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .main {
-background: rgba(247, 180, 45, 0.269);
+background: rgb(12, 43, 100);
 position:absolute;
-top:auto;
+margin-top:35px;
 left:25%;
 width:auto;
 text-align: center;
 padding:30px;
-border-radius: 3rem;
+border-radius: 0;
 box-shadow: 0px 0px 8px -5px #000000;
 padding-top: 3%;
 padding-bottom: 5%;
@@ -120,7 +120,7 @@ display:flex;
 }
 
 h1 {
-color:rgb(150, 128, 110); 
+color:rgb(255, 255, 255); 
 display: flex;
 font-family: Arial black;
 text-align: center;
@@ -129,7 +129,7 @@ font-size: 45px;
 }
 
 input {
-border-radius: 3rem;
+border-radius: 0.5rem;
 border: none;
 padding: 10px;
 text-align: center;
@@ -150,11 +150,11 @@ box-shadow: 0px 0px 8px -5px #000000;
 }
 
 #done {
-background: rgb(135, 101, 70);
+background: rgb(37, 168, 201);
 }
 #done:hover{
 color:white;
-background-color: rgb(73, 52, 33);
+background-color: rgb(91, 104, 116);
 }
 .button {
 cursor: pointer;
@@ -181,5 +181,6 @@ color: white;
 h6{
 margin-top: 20px;
 font-size: 20px;
+color:white;
 }
 </style>

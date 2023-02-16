@@ -13,6 +13,7 @@
             <!-- <p>Tipp de Madera: <b>{{pedidos.TipoMadera}}</b></p>
             <p>Medio de pago:  <b>{{pedidos.MedioPago}}</b></p>
             <p>Tipo de tela: <b>{{pedidos.TipoTela}}</b></p> -->
+            
             <li><a>{{pedidos.nombre}}</a></li>
             <a><strong><u>En caso de ser necesario comuníquese con Soporte Técnico</u></strong></a>
             <!-- <p>Tipo de documento: <b>{{pedidos.tipoDoc}}</b></p>
