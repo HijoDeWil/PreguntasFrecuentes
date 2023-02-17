@@ -13,28 +13,21 @@
             <li class="nav-item"><router-link to="/BenGafas" class="" active-class="active">¿Como acceder al beneficio de gafas?</router-link></li>
             <li class="nav-item"><router-link to="/CertificadoLaboral" class="" active-class="active">¿Como solicitar un certificado laboral?</router-link></li>
             <li class="nav-item"><router-link to="/PermisoCalamidad" class="" active-class="active">¿Como solicitar un permiso o informar una calamidad?</router-link></li>
+            <li class="nav-item"><router-link to="" class="" active-class="active">¿Quienes son nuestros aliados?</router-link></li>
+            <li class="nav-item"><router-link to="/RetirarCesantias" class="" active-class="active">¿Como retirar tus cesantías?</router-link></li>
             <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
               <router-link :to="`/InfoPedido/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li>     
           </div>
-
-        <!-- contabilidad -->
-        <div class="caja-theme">      
-      <h2>Contabilidad</h2>
-      <!-- <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Como solicitar un certificado laboral?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li> -->
-      </div>
-
        <!--  sistemas -->
       <div class="caja-theme">      
       <h2>Sistemas</h2>
       <li class="nav-item"><router-link to="/ConexionRed" active-class="active"><a>¿Problemas con la red?</a></router-link></li>
       <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
       <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Páginas WEB?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
+    <!--   <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
     </div>
 
     <div class="caja-theme">      
@@ -47,6 +40,14 @@
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
     </div>
+      <!-- contabilidad -->
+      <div class="caja-theme">      
+      <h2>Contabilidad</h2>
+      <!-- <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Como solicitar un certificado laboral?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li> -->
+      </div>
+
 </div>
       </body>
 
@@ -212,7 +213,7 @@ div.caja-theme{
   display:inline-block;
   margin-top:auto;
   vertical-align:top;
-  margin-left: 15px;
+  margin-left: 60px;
 }
 h2{
   font-family: 'Times New Roman', Times, serif;
@@ -222,7 +223,7 @@ h2{
 li a{
   font-family:'Times New Roman', Times, serif;
   color:#000;
-  font-size:12px;
+  font-size:14px;
 }
 a:hover{
   background-color: #88ddf7;

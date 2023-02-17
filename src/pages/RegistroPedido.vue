@@ -42,88 +42,39 @@
         </select>
     
           <div>
-            <label>Fecha Del Pedido</label>
+            <label>Fecha</label>
                   <input type="DATE" v-model="fecha">
           </div>
-          <div>
-            <label for="formGroupExampleInput">Agregar Imagen Alusiva</label>
-            <input class="form-control" type="file" name="image">
-          </div>
-
+          <h5>Agrega imagen(es) o video(s) alusivos</h5>
+          <input type="file" id="photo">
+          <button id="upload" onclick="uploadImage()">Upload Image</button>
+          <div col-sm-4>
           <button class="btn btn-primary" @click="addPedido" id="btn-alert" onclick="alert('Tu Pregunta Fue Agregada Correctamente')">
             Añadir
           </button>
+        </div>
         </div>
       </div>
     </div>
   </template>
   <script>
-  /*eslint-disable*/
   import {ref} from 'vue'
   import axios from 'axios'
-  // import {useStore} from 'vuex'
-  // import {useRouter} from 'vue-router'
   export default {
-    setup(){
-      // const store = useStore()
-      // const router = useRouter()
+    setup(){     
       const area = ref("")
       const nameProducto = ref("")
-      const image = ref("")
-      const MedioPago = ref("")
-      const TipoTela = ref("")
-      const nombre = ref("")
-      const tipoDoc= ref("")
-      const documento = ref("")
-      const direccion = ref("")
+      const nombre = ref("")    
       const fecha = ref("")
-  
-      //const aporte = ref("")
-  
       function addPedido(){
         if(nameProducto.value != ''){
-         const pedido = {
-            area:area.value,
-            nameProducto:nameProducto.value,
-            image:image.value,
-            MedioPago:MedioPago.value,
-            TipoTela:TipoTela.value,
-            nombre:nombre.value,
-            tipoDoc:tipoDoc.value,
-            documento:documento.value,
-            direccion:direccion.value,
-            fecha:fecha.value,
-  
-            /*aporte:aporte.value*/
-           }        
-          /*    store.dispatch("addPersona", persona);        
-          router.push('/print') */
-          axios.post('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json',pedido).then(res=>console.log(res)).catch(error => console.log(error))
+         const pedido = { area:area.value, nameProducto:nameProducto.value, nombre:nombre.value, fecha:fecha.value};
+          axios.post('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json',pedido).then(res=>console.log(res)).catch(error => console.log(error));
         }
       }
-      return{area, nameProducto, nombre, tipoDoc, documento, direccion ,fecha, image , addPedido}
-    }
-    /*data() {
-       return {
-         nombre: "",
-         email: "",
-         aporte: "",
-       };
-     },
-     methods: {
-       addPersona() {
-         if (this.nombre != "" && this.email != "") {
-           const persona = {
-             nombre: this.nombre,
-             email: this.email,
-             aporte: this.aporte,
-           };
-           this.$store.dispatch("addPersona", persona);
-           this.$router.push('/print')
-         }
-       },
-     },*/
-  };
+      return{area, nameProducto, nombre ,fecha, addPedido}
+    },mounted(){
+  }}
   </script>
   <style scoped>
   h1{
@@ -173,11 +124,11 @@
   .card {
       height: auto;
       margin:auto;
-      background-color: rgb(12, 43, 100);
+      width: 700px;
       border-style: none;
       border-radius:0;
       border-style: solid;
-      border-width: 2px;
+      border-width: 1.5px;
       border-color:black;
       justify-content: center;
   }
@@ -187,10 +138,18 @@
     font-size:20px;
   }
   div.card-body{
-    width:auto;
-    margin-top: 20px;
+    width:800px;
+    background-color: rgb(12, 43, 100);
+    margin-top: 0;
+    margin-right: 200px;
+    
   }
   div{
-    margin-top:30px
+    margin-top:30px;
+    margin-right: 150px;
+  }
+  img.img-responsive{
+    width: 100px;
+    height: 100px
   }
   </style>

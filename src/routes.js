@@ -13,6 +13,7 @@ import Details from './pages/Details.vue'
 import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
 import InfoPedido from './pages/InfoPedido.vue'
+import RetirarCesantias from './pages/RetirarCesantias.vue'
 //fin pages
 /* import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
@@ -36,6 +37,7 @@ export const routes = [
     {path:'/PrintData',component:PrintData},
     {path:'/Pedidos',component:Pedidos},
     {path:'/InfoPedido/:index',component:InfoPedido},
+    {path:'/RetirarCesantias',component:RetirarCesantias},
     //fin pages
 /*     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},
