@@ -25,7 +25,8 @@
                 <br/></strong></a>
             
             <li><a>Al número celular que colocaste en el formulario deberá llegarte un código de acceso,
-                el cual tienes que poner en el campo correspondiente y le das continuar.
+                el cual tienes que poner en el campo correspondiente y le das continuar.<br/>
+                <li><a>Las promesas de compraventa y los contratos de mejoramiento de vivienda deben venir autenticados en notaría.</a></li>
                 <strong>Ingresa el valor de las cesantías que desdeas retirar</strong>
             <br/><br/></a></li>
             <a>Selecciona el departamento, ciudad donde trabajas y el medio de pago que quieres para hacer el retiro de tus cesantías </a>

@@ -6,17 +6,15 @@
   </head>
       <body>
       <div class='enc'>
-        <h1 class='pie'><strong>Reincar Preguntas Frecuentes</strong></h1>
+        <h1 class='pie'><strong>Preguntas Frecuentes</strong></h1>
         <!-- recursos humanos -->
         <div class="caja-theme">
             <h2>Recursos Humanos</h2>
             <li class="nav-item"><router-link to="/BenGafas" class="" active-class="active">¿Como acceder al beneficio de gafas?</router-link></li>
             <li class="nav-item"><router-link to="/CertificadoLaboral" class="" active-class="active">¿Como solicitar un certificado laboral?</router-link></li>
             <li class="nav-item"><router-link to="/PermisoCalamidad" class="" active-class="active">¿Como solicitar un permiso o informar una calamidad?</router-link></li>
-            <li class="nav-item"><router-link to="" class="" active-class="active">¿Quienes son nuestros aliados?</router-link></li>
-            <li class="nav-item"><router-link to="/RetirarCesantias" class="" active-class="active">¿Como retirar tus cesantías?</router-link></li>
-            <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
-              <router-link :to="`/InfoPedido/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li>     
+            <li class="nav-item"><router-link to="" class="" active-class="active">¿Que beneficios tengo como trabajador?</router-link></li>
+            <li class="nav-item"><router-link to="/RetirarCesantias" class="" active-class="active">¿Como solicito el retiro de mis cesantías?</router-link></li>
           </div>
        <!--  sistemas -->
       <div class="caja-theme">      
@@ -32,6 +30,8 @@
 
     <div class="caja-theme">      
       <h2>Administrativo</h2>
+       <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
+              <router-link :to="`/InfoPedido/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li> 
       <!-- <li class="nav-item"><router-link to="/ConexionRed" active-class="active"><a>¿Problemas con la red?</a></router-link></li>
       <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
       <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Páginas WEB?</a></router-link></li>
@@ -43,6 +43,7 @@
       <!-- contabilidad -->
       <div class="caja-theme">      
       <h2>Contabilidad</h2>
+      <li class="nav-item"><router-link to="" active-class="active"><a>¿Como realizan mi liquidación al terminar el contrato?</a></router-link></li>
       <!-- <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Como solicitar un certificado laboral?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li> -->
