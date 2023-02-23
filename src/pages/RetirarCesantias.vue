@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><strong>Solicita el retiro de tus Cesantías
+        <h1><strong>¿Como solicito el retiro de mis Cesantías?
         </strong></h1>
         <div class="container">
         <div class="img-gafas">
@@ -34,8 +34,9 @@
             <li><a>Ingresa los datos de tu cuenta bancaria y nuevamente le das al boton continuar<br/></a></li>
             <a><strong>Confirma que todos tus datos sean los correctos, acepta los terminos y condiciones.<br/></strong></a>
             <a>Das Clic al boton "ENVIAR SOLICITUD"<strong> seras redireccionado a otra página y le das finalizar</strong><br/></a>
-            <a><strong>PARA CUALQUIER DUDA COMUNÍCATE CON PAOLA ORTEGA DE CAPITAL HUMANO</strong></a>
-            </div>
+            <a><strong>PARA CUALQUIER DUDA COMUNÍCATE CON PAOLA ORTEGA DE CAPITAL HUMANO EXT-119</strong></a>
+            <br/><br/><br/><br/><br/><br/>
+        </div>
         </div>
     </div>
 </template>

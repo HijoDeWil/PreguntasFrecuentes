@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><strong>Solicitar un Permiso o Informar una Calamidad</strong></h1>
+        <h1><strong>¿Como solicitar un Permiso o Informar una Calamidad?</strong></h1>
         <div class="img-gafas">
         <center><img src="../assets/calamida.png"></center>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><strong>Problemas al Encender el Equipo
+        <h1><strong>¿Que hago si tengo problemas al Encender el Equipo?
         </strong></h1>
         <div class="container">
         <div class="img-gafas">

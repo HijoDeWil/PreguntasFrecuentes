@@ -13,7 +13,7 @@
       <ul class="nav">
        
         <li class="nav-item">
-          <router-link to="/Header" class="nav-link" active-class="active"
+          <router-link to="/pqrs" class="nav-link" active-class="active"
             >Inicio</router-link
           >
         </li>

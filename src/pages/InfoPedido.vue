@@ -15,7 +15,9 @@
             <p>Tipo de tela: <b>{{pedidos.TipoTela}}</b></p> -->
             
             <li><a>{{pedidos.nombre}}</a></li>
-            <a><strong><u>En caso de ser necesario comuníquese con Soporte Técnico</u></strong></a>
+            <a>{{pedidos.nombreA}}</a><br/>
+            <a>{{pedidos.nombreB}}</a><br/>
+            <li><a><strong><u>En caso de ser necesario comuníquese con Capital Humano EXT-119</u></strong></a></li>
             <!-- <p>Tipo de documento: <b>{{pedidos.tipoDoc}}</b></p>
             <p>Numero documento: <b> {{pedidos.documento}}</b></p>
             <p>Dirección:  <b>{{pedidos.direccion}}</b></p> -->

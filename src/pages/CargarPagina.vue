@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><strong>Problemas al Cargar Página
+        <h1><strong>¿Que hago si tengo problemas al cargar Página?
         </strong></h1>
         <div class="container">
         <div class="img-gafas">
@@ -21,7 +21,7 @@
                 eliminar el historial de navegación. Cuando finalice el proceso,<strong>Reinicar el computador.</strong>
             <br/><br/></a>
 
-            <a><strong>Si el problema persiste comunícate con soporte técnico</strong><br/><br/></a>
+            <a><strong>Si el problema persiste comunícate con soporte técnico EXT-106</strong><br/><br/></a>
             <a>En algunas páginas pocas ocaciones te saldrá la siguiente imagen,¿Como podemos solucionarlo?<br/></a>
             <a>1. Selecciona la siguiente opción: <strong>opciones avanzadas.</strong><br/></a>
             <a>2. Haz clic donde señala la flecha roja  <strong>Acceder</strong>"nombre de la página"<strong>(Sitio no seguro)</strong>

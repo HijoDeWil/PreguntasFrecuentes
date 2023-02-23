@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><strong>Problemas con la Red
+        <h1><strong>¿Que hago si tengo problemas con la red?
         </strong></h1>
         <div class="container">
         <div class="img-gafas">
@@ -16,7 +16,7 @@
             <a>1. Verifica que tu cable de red esté bien conectado.<br/></a>
             <a>2. Puede que nuestro cable de red esté suelto de la tarjeta de red<br/></a>
             <a>3. Tiene dañado el punto de ajusta que soporta nuestro cable de red al equipo.<br/></a>
-            <a><strong>Si el problema persiste comunícate con soporte técnico</strong><br/></a>
+            <a><strong>Si el problema persiste comunícate con soporte técnico EXT-106</strong><br/></a>
         </div>
     </div>
 </template>

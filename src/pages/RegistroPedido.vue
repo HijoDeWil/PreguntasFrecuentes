@@ -15,7 +15,11 @@
               class="form-control"
               placeholder="¿ejemplo pregunta?"
             />
-          </div>          
+          </div>   
+          
+          
+
+         <!--  aquí van los cuadros de texto -->
         <h5>Aquí escriba la Repuesta de su Pregunta</h5>
           <div class="form-group">
             <label for="formGroupExampleInput">responda la pregunta</label>
@@ -23,8 +27,26 @@
             v-model="nombre" 
             type="text" 
             class="form-control" 
-            cols="60" 
-            rows="10">Escriba el proceso para solucionar su pregunta</textarea>
+            cols="50" 
+            rows="4">Escriba el proceso para solucionar su pregunta</textarea>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">use este espacio para agregar otra sección de texto</label>
+            <textarea 
+            v-model="nombreA" 
+            type="text" 
+            class="form-control" 
+            cols="50" 
+            rows="4">Escriba el proceso para solucionar su pregunta</textarea>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">use este espacio para agregar otra sección de texto</label>
+            <textarea 
+            v-model="nombreB" 
+            type="text" 
+            class="form-control" 
+            cols="50" 
+            rows="4">Escriba el proceso para solucionar su pregunta</textarea>
           </div>
 
           <h6>Seleccione el Área al que pertenece </h6>
@@ -46,7 +68,7 @@
                   <input type="DATE" v-model="fecha">
           </div>
           <h5>Agrega imagen(es) o video(s) alusivos</h5>
-          <input type="file" id="photo">
+          <input type="file" id="photo" name="imagen">
           <button id="upload" onclick="uploadImage()">Upload Image</button>
           <div col-sm-4>
           <button class="btn btn-primary" @click="addPedido" id="btn-alert" onclick="alert('Tu Pregunta Fue Agregada Correctamente')">
@@ -62,17 +84,20 @@
   import axios from 'axios'
   export default {
     setup(){     
+      const imagen = ref("")
       const area = ref("")
       const nameProducto = ref("")
+      const nombreB = ref("")
+      const nombreA = ref("")
       const nombre = ref("")    
       const fecha = ref("")
       function addPedido(){
         if(nameProducto.value != ''){
-         const pedido = { area:area.value, nameProducto:nameProducto.value, nombre:nombre.value, fecha:fecha.value};
+         const pedido = { area:area.value, nameProducto:nameProducto.value, nombre:nombre.value, nombreA:nombreA.value, nombreB:nombreB.value,fecha:fecha.value, imagen:imagen.value};
           axios.post('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json',pedido).then(res=>console.log(res)).catch(error => console.log(error));
         }
       }
-      return{area, nameProducto, nombre ,fecha, addPedido}
+      return{area, nameProducto, nombre, nombreA, nombreB ,fecha, imagen , addPedido}
     },mounted(){
   }}
   </script>

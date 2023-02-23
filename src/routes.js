@@ -1,4 +1,4 @@
-import Header from './components/Header.vue'
+import pqrs from './components/Header.vue'
 import LoginUno from './components/LoginUno.vue'
 
 //pages
@@ -14,6 +14,10 @@ import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
 import InfoPedido from './pages/InfoPedido.vue'
 import RetirarCesantias from './pages/RetirarCesantias.vue'
+import MisBeneficios from './pages/MisBeneficios.vue'
+import OrganigramaR from './pages/OrganigramaR.vue'
+import SeguridadDeLaInformacion from './pages/SeguridadDeLaInformacion.vue'
+import DañoDiadema from './pages/DañoDiadema.vue'
 //fin pages
 /* import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
@@ -24,7 +28,7 @@ import AppVue from './App.vue'
 
 export const routes = [
     {path:'/LoginUno',component:LoginUno},
-    {path:'/Header',component:Header},
+    {path:'/pqrs',component:pqrs},
     //pages
     {path:'/BenGafas',component:BenGafas},
     {path:'/CertificadoLaboral',component:CertificadoLaboral},
@@ -38,6 +42,10 @@ export const routes = [
     {path:'/Pedidos',component:Pedidos},
     {path:'/InfoPedido/:index',component:InfoPedido},
     {path:'/RetirarCesantias',component:RetirarCesantias},
+    {path:'/MisBeneficios',component:MisBeneficios},
+    {path:'/OrganigramaR',component: OrganigramaR},
+    {path:'/SeguridadDeLaInformacion',component:SeguridadDeLaInformacion},
+    {path:'/DañoDiadema',component:DañoDiadema},
     //fin pages
 /*     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},

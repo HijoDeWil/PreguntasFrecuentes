@@ -1,14 +1,12 @@
 <template>
     <div>
-        <h1><strong>¿Como puedo solicitar un Certificado Laboral?</strong></h1>
+        <h1><strong></strong></h1>
         <div class="img-gafas">
-        <center><img src="../assets/certificado.png"></center>
+      <!--   <center><img src="../assets/gafas.png"></center> -->
         </div>
         <div class="container">
-            <li><a>El trabajador debe enviar un correo electrónico a <strong>paola.o@reincar.com.co</strong> especificando
-            que información requieren que se les certifique y por ese mismo medio se enviará el documento; si lo requiere en fisico
-            debe señalarlo en la solicitud y reclamarlo en capital humano. Las certificaciones solo se expedirán los días jueves por la
-            tarde.</a></li>
+            <h1>Estamo Trabajando duro para darte la mejor experiencia</h1>
+
         </div>
     </div>
 </template>
