@@ -33,6 +33,11 @@
             >Formulario de Preguntas</router-link
           >
         </li>
+        <li class="nav-item" v-if="verificar">
+          <router-link to="/PreguntasQuejasR" class="nav-link" active-class="active"
+            >PQRS</router-link
+          >
+        </li>
       </ul>
       <h1>Bienvenido!</h1>
       </nav>

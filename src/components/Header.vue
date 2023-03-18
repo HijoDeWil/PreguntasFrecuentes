@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
       <body>
-      <div class='enc'>
+    <div class='enc'>
         <h1 class='pie'><strong>Preguntas Frecuentes</strong></h1>
         <!-- recursos humanos -->
         <div class="caja-theme">
@@ -16,6 +16,7 @@
             <li class="nav-item"><router-link to="/MisBeneficios" class="" active-class="active">¿Que beneficios tengo como trabajador?</router-link></li>
             <li class="nav-item"><router-link to="/RetirarCesantias" class="" active-class="active">¿Como solicito el retiro de mis cesantías?</router-link></li>
             <li class="nav-item"><router-link to="/MisBeneficios" active-class="active"><a>¿Como realizan mi liquidación al terminar el contrato?</a></router-link></li>
+            <li class="nav-item"><router-link to="/OrganigramaR" active-class="active"><a>¿Como es el organigrama de la empresa?</a></router-link></li>
           </div>
        <!--  sistemas -->
       <div class="caja-theme">      
@@ -29,13 +30,14 @@
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
     </div>
+   
 
     <div class="caja-theme">      
       <h2>Administrativo</h2>
-      <li class="nav-item"><router-link to="/SeguridadDeLaInformacion" active-class="active"><a>1.¿Cuales son las políticas de seguridad de la información?</a></router-link></li>
-       <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
-              <router-link :to="`/InfoPedido/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li> 
-              <li class="nav-item"><router-link to="/OrganigramaR" active-class="active"><a>¿Como es el organigrama de la empresa?</a></router-link></li>
+      <li class="nav-item"><router-link to="/SeguridadDeLaInformacion" active-class="active"><a>¿Cuales son las políticas de seguridad de la información?</a></router-link></li>
+      <li v-for="(pedido, i) in pedidos" :key="i"  class="nav-item">
+              <router-link :to="`/InfoDB/${pedido.id}`" active-class="active">{{pedido.nameProducto}}</router-link></li> 
+      <li class="nav-item"><router-link to="/DirPersonalApoyo" active-class="active"><a>¿Cuales son los directivos y el personal de apoyo?</a></router-link></li>
               
       <!-- <li class="nav-item"><router-link to="/ConexionRed" active-class="active"><a>¿Problemas con la red?</a></router-link></li>
       <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
@@ -45,18 +47,76 @@
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
     </div>
-      <!-- contabilidad -->
-      <div class="caja-theme">      
-      <h2>Contabilidad</h2>
-     
-      <!-- <li class="nav-item"><router-link to=""><a>¿Como acceder al beneficio de gafas?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Como solicitar un certificado laboral?</a></router-link></li>
-      <li class="nav-item"><router-link to=""><a>¿Como solicitar un permiso o informar una calamidad?</a></router-link></li> -->
-      </div>
+
+    <div class="caja-theme">
+    <h2>Formación</h2>
+      <li class="nav-item"><a href="http://192.168.2.26:81/moodle/login/index.php" target="_blank">Link de capacitaciones moodle de Reincar</a></li>
+     <!--  <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
+      <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Problemas con páginas WEB?</a></router-link></li>
+      <li class="nav-item"><router-link to="/DañoDiadema" active-class="active"><a>¿Problemas con la diadema?</a></router-link></li> -->
+      <!--   <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
+      <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
+      <li class="nav-item"><router-link to=""><a>¿Problemas con aplicativo Eyebeam, Zoiper, Microsip?</a></router-link></li> -->
+    </div>
 
 </div>
       </body>
+      <div class="pqr-container">
+  <div class="form-text">
+    <div class="background-block">
+      <div class="text-block">
+  <h5>¿Tienes alguna sugerencia, queja o reclamo?</h5>
+          <label for="formGrpupExampleInput">Escoge la cartera o el área a la que perteneces.</label>
+          <h6>Selecciona el Área al que perteneces </h6>
+          <select
+            v-model="area"
+            type="text"
+            name="area"
+            class="form-control"
+            placeholder="Selecciona el Área"
+        ><option value=""></option>
+          <option value="sistemas">Sistemas</option>
+          <option value="administrativo">Administrativo</option>
+          <option value="contabilidad">Contabilidad</option>
+          <option value="rechumanos">Recursos Humanos</option>
+          <option value="credifinanciera">Credifinanciera</option>
+          <option value="comultrasan">Comultrasan</option>
+          <option value="credivalores">Credivalores</option>
+          <option value="cens">Cens</option>
+          <option value="bancobogota">Banco de Bogotá</option>
+          <option value="chec">Chec</option>
+          <option value="toyota">Toyota</option>
+          <option value="avvillas">AVVillas</option>
+        </select>
 
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nombre</label>
+            <input
+            v-model="nombre" 
+            type="text" 
+            class="form-control"
+            placeholder="Escribe tu nombre (Opcinal)"/>
+          </div>
+          <label>Fecha</label>
+                  <input type="DATE" v-model="fecha">
+
+          <div class="form-group">
+            <label for="formGroupExampleInput">Escribe aquí cuales son tus dudas o sugerencias...</label>
+            <textarea 
+            v-model="pqrs" 
+            type="text" 
+            class="form-control" 
+            cols="10" 
+            rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary" @click="addPqrs" id="btn-alert" onclick="alert('Tu respuesta se ha enviado correctamente')">
+            Enviar
+          </button>
+      </div>
+    </div>
+  </div>
+</div>
        <!--  <li class="nav-item">
           <routerLink to="" class="nav-link" active-class="active">Recursos Humanos</routerLink>
           <ul>
@@ -118,6 +178,17 @@ import axios from 'axios'
 import { useRouter } from 'vue-router';*/
 export default {
   setup(){
+    const area = ref("")
+    const pqrs = ref("")
+    const nombre = ref("")
+    const fecha = ref("")
+
+    function addPqrs(){
+      if(pqrs.value != '', area.value !='', fecha.value !=''){
+        const agregarPqrs = {fecha:fecha.value, pqrs:pqrs.value, area:area.value, nombre:nombre.value};
+        axios.post('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/agregarPqrs.json',agregarPqrs).then(res=>console.log(res)).catch(error => console.log(error));
+      }
+    }
     const pedidos = ref([])
   axios.get('https://preguntasfrecuentesreincar-default-rtdb.firebaseio.com/pedido.json')
   .then(res =>{
@@ -139,7 +210,7 @@ export default {
     }
   })
   .catch(error=>console.log(error))
-  return {pedidos};
+  return {pedidos, pqrs, area, nombre, fecha,  addPqrs};
 },
   data(){
     return{
@@ -219,7 +290,7 @@ div.caja-theme{
   display:inline-block;
   margin-top:auto;
   vertical-align:top;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 h2{
   font-family: 'Times New Roman', Times, serif;
@@ -244,7 +315,7 @@ li{
 }
 li.nav-item{
   padding:0cm;
-  list-style: none;
+  list-style:circle;
   line-height: 0%;
 }
 a{
@@ -256,5 +327,20 @@ li .nav-link{
 }
 footer{
   padding:10px;
+}
+div.pqr-container{
+  margin-left: 10px;
+  padding: 12px;
+  background-color: #072463;
+  color:#fff
+}
+.pqr-container{
+  padding: 3rem;
+  width: 13cm;
+}
+div.form-text{
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 </style>

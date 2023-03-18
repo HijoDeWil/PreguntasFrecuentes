@@ -5,8 +5,9 @@
       <!--   <center><img src="../assets/gafas.png"></center> -->
         </div>
         <div class="container">
-            <h1>Estamo Trabajando duro para darte la mejor experiencia</h1>
-
+           <center><img src="../assets/organigramab.jpg" width="1150" height="800"></center>
+           <h1><center>Sede Bogotá</center></h1>
+           <center><img src="../assets/organigrama.jpg" width="1150" height="800"></center>
         </div>
     </div>
 </template>

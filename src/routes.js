@@ -12,12 +12,15 @@ import FormData from './pages/FormData.vue'
 import Details from './pages/Details.vue'
 import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
-import InfoPedido from './pages/InfoPedido.vue'
+import InfoDB from './pages/InfoPedido.vue'
 import RetirarCesantias from './pages/RetirarCesantias.vue'
 import MisBeneficios from './pages/MisBeneficios.vue'
 import OrganigramaR from './pages/OrganigramaR.vue'
 import SeguridadDeLaInformacion from './pages/SeguridadDeLaInformacion.vue'
 import DañoDiadema from './pages/DañoDiadema.vue'
+import DirPersonalApoyo from './pages/DirPersonalApoyo.vue'
+import PreguntasQuejasR from './pages/PreguntasQuejasR.vue'
+import InfoPqrs from './pages/InfoPqrs.vue'
 //fin pages
 /* import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
@@ -40,12 +43,15 @@ export const routes = [
     {path:'/details',component:Details},
     {path:'/PrintData',component:PrintData},
     {path:'/Pedidos',component:Pedidos},
-    {path:'/InfoPedido/:index',component:InfoPedido},
+    {path:'/InfoDB/:index',component:InfoDB},
     {path:'/RetirarCesantias',component:RetirarCesantias},
     {path:'/MisBeneficios',component:MisBeneficios},
     {path:'/OrganigramaR',component: OrganigramaR},
     {path:'/SeguridadDeLaInformacion',component:SeguridadDeLaInformacion},
     {path:'/DañoDiadema',component:DañoDiadema},
+    {path:'/DirPersonalApoyo',component:DirPersonalApoyo},
+    {path:'/PreguntasQuejasR',component:PreguntasQuejasR},
+    {path:'/InfoPqrs',component:InfoPqrs},
     //fin pages
 /*     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},

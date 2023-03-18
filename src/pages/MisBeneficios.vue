@@ -5,7 +5,7 @@
       <!--   <center><img src="../assets/gafas.png"></center> -->
         </div>
         <div class="container">
-            <h1>Estamo Trabajando duro para darte la mejor experiencia</h1>
+            <h1>Estamos Trabajando duro para darte la mejor experiencia</h1>
 
         </div>
     </div>
