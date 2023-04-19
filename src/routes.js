@@ -21,6 +21,10 @@ import DañoDiadema from './pages/DañoDiadema.vue'
 import DirPersonalApoyo from './pages/DirPersonalApoyo.vue'
 import PreguntasQuejasR from './pages/PreguntasQuejasR.vue'
 import InfoPqrs from './pages/InfoPqrs.vue'
+import UserLocked from './pages/UserLocked.vue'
+import PcLento from './pages/PcLento.vue'
+import ErrorSyscorp from './pages/ErrorSyscorp.vue'
+import BarraTareas from './pages/BarraTareas.vue'
 //fin pages
 /* import PrintData from './pages/PrintData.vue'
 import Pedidos from './pages/RegistroPedido.vue'
@@ -52,6 +56,10 @@ export const routes = [
     {path:'/DirPersonalApoyo',component:DirPersonalApoyo},
     {path:'/PreguntasQuejasR',component:PreguntasQuejasR},
     {path:'/InfoPqrs',component:InfoPqrs},
+    {path:'/UserLocked',component:UserLocked},
+    {path:'/PcLento',component:PcLento},
+    {path:'/ErrorSyscorp',component:ErrorSyscorp},
+    {path:'/BarraTareas',component:BarraTareas},
     //fin pages
 /*     {path:'/print', component:PrintData},
     {path:'/log', component:LoginUno},

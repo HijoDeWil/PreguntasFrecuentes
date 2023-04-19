@@ -25,6 +25,11 @@
       <li class="nav-item"><router-link to="/ProblemaEncendido" active-class="active"><a>¿Problemas al encender el equipo?</a></router-link></li>
       <li class="nav-item"><router-link to="/CargarPagina" active-class="active"><a>¿Problemas con páginas WEB?</a></router-link></li>
       <li class="nav-item"><router-link to="/DañoDiadema" active-class="active"><a>¿Problemas con la diadema?</a></router-link></li>
+      <li class="nav-item"><router-link to="/UserLocked" active-class="active"><a>¿Por qué mi usuario sale bloqueado?</a></router-link></li>
+      <li class="nav-item"><router-link to="/PcLento" active-class="active"><a>¿Por qué mi PC está lento?</a></router-link></li>
+      <li class="nav-item"><router-link to="/ErrorSyscorp" active-class="active"><a>¿Por qué me sale un error al intentar abrir el Syscorp?</a></router-link></li>
+      <li class="nav-item"><router-link to="/BarraTareas" active-class="active"><a>¿Por qué se bloqueó la barra de tareas o sale sin íconos?</a></router-link></li>
+
       <!--   <li class="nav-item"><router-link to=""><a>¿Abrir archivos de OpenOffice o LibreOficce?</a></router-link></li>
       <li class="nav-item"><router-link to=""><a>¿Ingresar a la compartida?</a></router-link></li>    
       <li class="nav-item"><router-link to=""><a>¿Pidgin o Spark?</a></router-link></li>
@@ -282,7 +287,7 @@ export default {
   width:100%;
   height: 100%;
   background-repeat: no-repeat;
-  margin-top: 40px;
+  margin-top: 0;
  }
 div.caja-theme{
   padding:auto;
@@ -300,7 +305,7 @@ h2{
 li a{
   font-family:'Times New Roman', Times, serif;
   color:#000;
-  font-size:14px;
+  font-size:16px;
 }
 a:hover{
   background-color: #88ddf7;
@@ -319,7 +324,7 @@ li.nav-item{
   line-height: 0%;
 }
 a{
-  line-height: 0px;
+  line-height: 5px;
 }
 li .nav-link{
   text-align: left;
